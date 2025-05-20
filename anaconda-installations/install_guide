@@ -1,0 +1,19 @@
+## Anaconda Installation
+## Archives
+https://repo.anaconda.com/archive/
+
+1. download installer 
+curl -LO https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+
+2. Installer hashkey verification
+echo "3ba0a298155c32fbfd80cbc238298560bf69a2df511783054adfc151b76d80d8" Anaconda3-2024.10-1-Linux-x86_64.sh | sha256sum --check
+
+3. install 
+
+* silent_mode -> https://www.anaconda.com/docs/getting-started/anaconda/advanced-install/silent-mode#mac-os-linux
+
+bash Anaconda3-2024.10-1-Linux-x86_64.sh
+
+source ~/anaconda3/bin/activate
+conda init --all
+conda config --set auto_activate_base false
